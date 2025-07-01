@@ -1,0 +1,20 @@
+DECLARE
+	A INT;
+	B INT;
+	C INT;
+BEGIN
+
+	A := &A;
+	B := &B;
+	C := &C;
+	
+	IF A > B THEN
+		DBMS_OUTPUT.PUT_LINE('MAXIMUM IS ' || A);
+	ELSIF B > C THEN
+		DBMS_OUTPUT.PUT_LINE('MAXIMUM IS ' || B);
+	ELSE
+		DBMS_OUTPUT.PUT_LINE('MAXIMUM IS ' || C);
+	END IF;
+
+END;
+/

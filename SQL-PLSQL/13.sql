@@ -1,0 +1,15 @@
+DECLARE
+
+	A INT := &A;
+BEGIN
+	FOR I IN 1..A 
+	LOOP
+		FOR J IN 1..I 
+		LOOP
+			DBMS_OUTPUT.PUT('*');
+		END LOOP;
+		DBMS_OUTPUT.NEW_LINE;
+	END LOOP;
+END;
+/
+	
